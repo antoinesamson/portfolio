@@ -5,13 +5,17 @@
 :root {
     // Couleur de base
     --color-white: #fff;
-    --color-black: #274C5B;
-    --color-gray: #eff6f1;
-    --color-light-gray: #f9f8f8;
-    --color-dark-gray: #475b5a;
+    --color-black: #000;
+    
+
     // Couleurs du projet
-    --color-primary: #0084b8;
-    --color-light-primary: #00b5ff;
-    --color-bg-primary: #0084b8;
+    --color-primary: #CFEEFF;
+    --color-link: #F86893;
+    --color-bg-primary: #75002F;
+    --color-bg-secondary: #BD024D;
+    --color-bg-website: #00237D;
+    --color-gradient1: #BD024D;
+    --color-gradient2: #4F0013;
+
     --color-fail: #d12c2c;
 }

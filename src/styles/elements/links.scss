@@ -5,10 +5,12 @@
 
 a {
     text-decoration: none;
-    color: var(--color-black);
+    color: var(--color-link);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-CTA);
 
     &:hover {
-        color: var(--color-black);
+        color: var(--color-bg-secondary);
         text-decoration: underline;
     }
 }
