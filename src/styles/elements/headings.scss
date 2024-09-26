@@ -17,12 +17,13 @@ h6 {
 h1 {
     font-size: var(--font-size-h1);
     margin: 0;
-
+    text-transform: uppercase;
     
 }
 
 h2 {
     font-size: var(--font-size-h2);
+    text-transform: uppercase;
 }
 
 h3 {
@@ -34,5 +35,11 @@ h4 {
     font-size: var(--font-size-h4);
     font-size: var(--font-secondary);
 }
+
+h5 {
+    font-size: var(--font-size-logo);
+    font-family: var(--font-logo);
+}
+
 
 
