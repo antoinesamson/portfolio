@@ -80,6 +80,73 @@
     <div class="wrapper">
         <h2>Vous souhaitez me contacter?</h2>
         <h2>C'est par ici!</h2>
+
+        <div class="contact">
+            <div class="infos">
+
+                    <h3>Adresse Courriel</h3>
+                    <a>antoinesamson.developpeur@gmail.com</a>
+
+                    <h3>Téléphone</h3>
+                    <a>438-377-6621</a>
+
+                <div class="sociaux">
+                    <h3>Réseaux sociaux</h3>
+                    <a class="social"><svg class="icon icon--md">
+                        <use xlink:href="#icon-linkedin"></use>
+                    </svg></a>
+                    <a><svg class="icon icon--md">
+                        <use xlink:href="#icon-github"></use>
+                    </svg></a>
+                </div>
+
+                <div class="button">Mon cv</div>
+            </div>
+
+            <form action="" class="form" autocomplete="off" data-component="Form">
+
+                <div class="form__body">
+                    <h5>Informations personnelles</h5>
+                    <fieldset class="grid">
+                        
+                        <div class="input">
+                            <label class="input__label" for="name">Votre nom* </label>
+                            <input
+                             class="input__element" 
+                             type="text" 
+                             name="" 
+                             id="name" 
+                             placeholder="Jean-Eude"
+                             required
+                             >
+
+                        </div>
+
+                        <div class="input">
+                            <label class="input__label" for="email">Votre adresse courriel* </label>
+                            <input
+                             class="input__element" 
+                             type="email" 
+                             name="email" 
+                             id="email" 
+                             placeholder="Jean-Eude@comtedelarocheliere.com"
+                             required
+                             >
+        
+                             <div class="error_info">Veuillez entrer une adresse courriel valide</div>
+                        </div>
+
+                        <div class="input textarea">
+                            <label class="input__label" for="message">Message* </label>
+                            <textarea class="input__element" name="message" id="message" maxlength="500" placeholder="Que souhaitez-vous me dire?" required></textarea>
+                            <div class="error_info">Veuillez entrer votre message ici</div>
+                        </div>
+                
+                    </fieldset>
+                    <div class="button">Envoyer</div>
+                </div>
+            </form>
+        </div>
     </div>
 </section>
 
