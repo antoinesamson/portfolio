@@ -1,11 +1,12 @@
-footer .wrapper{
+footer .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-height: 100%;
     padding: 0 30px;
+    background-color: var(--color-bg-website);
 
-    .sociaux{
+    .sociaux {
         display: flex;
         justify-content: center;
         align-items: center;

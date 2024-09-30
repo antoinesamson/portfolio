@@ -1,22 +1,70 @@
-.menu{
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-bg-website);
-    max-height: 100px;
+    height: 100px;
     padding: 0 30px;
     border-bottom: 5px solid var(--color-primary);
 
-    h5{
+    h5 {
         margin: 0;
+        height: 45px;
+        transform: translateY(0);
+        transition: all 0.15s ease-out;
     }
-    
 
-    ul{
+    ul {
         display: flex;
         list-style: none;
         justify-content: center;
         align-items: center;
         gap: 30px;
+    }
+
+    .logo {
+        height: 45px;
+        overflow: hidden;
+    }
+
+    .hover {
+        color: var(--color-link);
+    }
+
+    .logo:hover {
+        h5,
+        h5.hover {
+            transform: translateY(-45px);
+        }
+    }
+
+    li,
+    li a {
+        max-height: 35px;
+        overflow: hidden;
+
+        div,
+        div.hover {
+            transition: all, 0.15s ease-out;
+        }
+
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+
+    li a:hover {
+        div,
+        div.hover {
+            transform: translateY(-38px);
+        }
+    }
+
+    li a div {
+        transform: translateY(0);
+    }
+
+    li a div.hover {
+        transform: translateY(38px);
     }
 }
