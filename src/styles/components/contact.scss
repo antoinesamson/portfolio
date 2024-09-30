@@ -1,0 +1,44 @@
+.contact{
+    padding: 85px 0;
+}
+
+.infos-form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form{
+    width: 100%;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.input__element{
+    width: 100%;
+    padding: 15px ;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--color-primary);
+    
+}
+
+.textarea .input__element{
+        height: 200px;
+    }
+
+fieldset{
+    border: none;
+    padding: 0;
+}
+
+.error_info{
+    display: none;
+    color: var(--color-bg-secondary);
+}
