@@ -1,0 +1,22 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-bg-website);
+    max-height: 100px;
+    padding: 0 30px;
+    border-bottom: 5px solid var(--color-primary);
+
+    h5{
+        margin: 0;
+    }
+    
+
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+}
