@@ -34,3 +34,14 @@
         );
     }
 }
+.hover-button {
+    background-image: linear-gradient(
+        var(--color-bg-secondary),
+        var(--color-bg-secondary)
+    );
+    border: 5px solid var(--color-bg-secondary);
+
+    &:hover {
+        background-image: none;
+    }
+}
