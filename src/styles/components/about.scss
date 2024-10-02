@@ -67,3 +67,10 @@
 .card-info {
     background-color: var(--color-bg-primary);
 }
+
+.icons-sociaux {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}

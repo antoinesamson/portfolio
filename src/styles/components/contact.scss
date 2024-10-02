@@ -1,5 +1,24 @@
 .contact {
     padding: 85px 0;
+
+    .contact-title {
+        margin-bottom: 50px;
+        padding: 30px;
+    }
+}
+
+.social {
+    .icon {
+        transform: translateY(0);
+    }
+
+    &:hover {
+        .icon {
+            transform: translateY(-8px);
+
+            color: var(--color-bg-primary);
+        }
+    }
 }
 
 .infos-form {
@@ -16,13 +35,22 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-}
+    justify-content: flex-start;
+    gap: 70px;
 
-.infos {
     a {
         color: var(--color-link);
     }
+
+    h3 {
+        margin: 0 0 10px 0;
+    }
+
+    .button {
+        color: var(--color-primary);
+        width: 50%;
+    }
+
     .link-mail,
     .link-phone {
         border-bottom: 3px solid transparent;
