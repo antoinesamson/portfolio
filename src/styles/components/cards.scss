@@ -78,3 +78,35 @@
     grid-column-end: 9;
     box-shadow: -35px -35px 0 var(--color-bg-primary);
 }
+
+.card-carousel{
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+
+    .card-media{
+        position: relative;
+        display: flex;
+        height: 100%;
+        width: 100%;
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top left;
+        }
+    }
+    .card-content{
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        right: 0;
+        width: 40%;
+        background-color: var(--color-bg-secondary);
+        padding: 10px 20px;
+        border-radius: 25px 0 0 0 ;
+    }
+}

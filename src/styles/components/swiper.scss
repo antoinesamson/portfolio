@@ -1,0 +1,37 @@
+.swiper{
+    height: 450px;
+}
+
+.swiper-wrapper{
+    height: calc(100% - 100px);
+}
+
+.swiper-slide{
+    height: 100%;
+    width: 100%;
+
+
+    
+}
+
+.swiper-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.swiper-pagination-bullet{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: 5px solid var(--color-bg-secondary);
+    opacity: 1;
+    transition: all 0.3s ease-in;
+
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--color-bg-secondary);
+}
+
