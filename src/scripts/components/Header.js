@@ -2,7 +2,7 @@ export default class Header {
   constructor(element) {
     this.element = element;
     this.options = {
-      treshold: 0.1,
+      treshold: 0.05,
     };
     this.scrollPosition = 0;
     this.lastScrollPosition = 0;
@@ -34,7 +34,8 @@ export default class Header {
       document.scrollingElement.scrollHeight * this.options.treshold
     ) {
       this.html.classList.add('header-is-hidden');
-    } else {
+    }
+    if (this.scrollPosition < this.lastScrollPosition) {
       this.html.classList.remove('header-is-hidden');
     }
   }
