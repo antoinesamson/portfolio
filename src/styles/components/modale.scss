@@ -1,0 +1,65 @@
+.cards-modale{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card-modale{
+    text-align: center;
+    cursor: pointer;
+    
+    .card-media{
+        position: relative;
+        border-radius: 25px;
+
+        height: 425px;
+        width: 425px;
+
+        
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .card-hover{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: var(--color-hover-modale);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: all 0.2s ease-in;
+      
+        span{
+
+                background-color: var(--color-primary);
+                border-radius: 20px;
+                height: 20px;
+                width: 100px;
+                position: absolute;
+
+                    
+                }
+                
+        span.plus-vertical{
+            transform: rotate(90deg);
+            }
+        
+    }
+
+    .modale-window{
+        display: none;
+    }
+
+    &:hover{
+        .card-hover{
+            opacity: 1;
+        }
+    }
+    
+}
