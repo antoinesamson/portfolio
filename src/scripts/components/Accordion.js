@@ -1,14 +1,14 @@
 export default class Accordion{
     constructor(element){
         this.element = element;
-        this.accordionContainers = this.element.querySelectorAll('.js-header');
+        this.accordionContainers = this.element.querySelectorAll('.js-accordion');
         this.accordionContainersAutoOpen = [];
 
         this.init();
     }
 
     init(){
-        
+        console.log("les accordéons sont là");
         
 
         for (let i = 0; i < this.accordionContainers.length; i++) {

@@ -1,20 +1,22 @@
-import Header from './components/Header';
-import Carousel from './components/Carousel';
-import Scrolly from './components/Scrolly';
-import Youtube from './components/Youtube';
-import Form from './components/Form';
 import Accordion from './components/Accordion';
+import Carousel from './components/Carousel';
+import Circle from './components/Circle';
+import Header from './components/Header';
+import Form from './components/Form';
+import Youtube from './components/Youtube';
+import Scrolly from './components/Scrolly';
 
 export default class ComponentFactory {
   constructor(element) {
     this.element = element;
     this.componentList = {
-      Header,
+      Accordion,
       Carousel,
+      Circle,
+      Form,
+      Header,
       Scrolly,
       Youtube,
-      Form,
-      Accordion,
     };
     this.init();
   }

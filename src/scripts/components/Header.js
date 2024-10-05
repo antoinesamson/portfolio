@@ -14,7 +14,7 @@ export default class Header {
 
   init() {
     this.setOptions();
-
+    console.log('le header est fonctionnel');
     window.addEventListener('scroll', this.onScroll.bind(this));
   }
 
