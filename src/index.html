@@ -1,26 +1,32 @@
 {% include "_partials/_header.html" %}
 
-<section class="hero" id="hero">
+<section class="hero" id="hero" data-component="Parallax">
     <div class="wrapper">
-        <h1>
-            <div class="left">Antoine</div>
 
-            <div class="right">Samson</div>
-        </h1>
+        <div class="parallax-wrap">
+            
+            <h1>
+                <div class="left">Antoine</div>
 
-        <h2>Développeur web junior</h2>
+                <div class="right">Samson</div>
+            </h1>
 
-        <div class="hero-grid">
-            <p>Je suis un étudiant bientôt diplômé en intégration multimédia et je recherche un stage en intégration Web</p>
+            <h2>Développeur web junior</h2>
 
-            <a class="button" href="projets.html">Voir les projets</a>
+            <div class="hero-grid">
+                <p>Je suis un étudiant bientôt diplômé en intégration multimédia et je recherche un stage en intégration Web</p>
+
+                <a class="button" href="projets.html">Voir les projets</a>
+            </div>
+
+            <div class="arrow">
+                <svg class="icon icon--md">
+                    <use xlink:href="#icon-arrow-down"></use>
+                </svg>
+            </div>
+    
         </div>
 
-        <div class="arrow">
-            <svg class="icon icon--md">
-                <use xlink:href="#icon-arrow-down"></use>
-            </svg>
-        </div>
     </div>
 </section>
 

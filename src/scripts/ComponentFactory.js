@@ -1,9 +1,11 @@
 import Accordion from './components/Accordion';
 import Carousel from './components/Carousel';
 import Circle from './components/Circle';
+import Cursor from './components/Cursor';
 import Header from './components/Header';
 import Form from './components/Form';
 import Modal from './components/Modal';
+import Parallax from './components/Parallax';
 import Youtube from './components/Youtube';
 import Scrolly from './components/Scrolly';
 
@@ -14,9 +16,11 @@ export default class ComponentFactory {
       Accordion,
       Carousel,
       Circle,
+      Cursor,
       Form,
       Header,
       Modal,
+      Parallax,
       Scrolly,
       Youtube,
     };

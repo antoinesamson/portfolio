@@ -4,10 +4,10 @@
 
     h1 .left,
     h1 .right {
-        -webkit-text-stroke-width: 8px;
-        -webkit-text-stroke-color: var(--color-primary);
+        -webkit-text-stroke: 8px var(--color-primary);
+
         paint-order: stroke fill;
-        //text-shadow: 0px 0px 0 var(--color-primary);
+
         -webkit-font-smoothing: antialiased;
         background: linear-gradient(
             var(--color-gradient1),
@@ -16,7 +16,7 @@
         );
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
-        paint-order: stroke fill;
+        
     }
     h1 .left {
         text-align: left;
