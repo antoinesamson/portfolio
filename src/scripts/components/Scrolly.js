@@ -3,7 +3,7 @@ export default class Scrolly {
     this.element = element;
 
     this.options = {
-      rootMargin: '-45%',
+      rootMargin: '-35% 0px',
     };
 
     this.init();
@@ -36,12 +36,12 @@ export default class Scrolly {
       const target = entry.target;
 
       if (entry.isIntersecting) {
-        target.classList.add('is-active');
+        target.classList.add('is-observed');
         if (this.options.repeat == false) {
           observer.unobserve(target);
         }
       } else {
-        target.classList.remove('is-active');
+        target.classList.remove('is-observed');
       }
     }
   }

@@ -20,7 +20,7 @@
             </div>
 
             <div class="arrow parallax-element">
-                <svg class="icon icon--md">
+                <svg class="icon icon--md" data-scrolly="slideDown">
                     <use xlink:href="#icon-arrow-down"></use>
                 </svg>
             </div>
@@ -32,24 +32,27 @@
 
 <section class="about" id="about">
     <div class="wrapper">
-        <div class="photo"  data-component="Circle">
+        <div class="photo" data-component="Circle">
+            <div class="circle"  data-scrolly="rollFromLeft">
             
-            <div class="photo-media">
-                <img src="./assets/images/Image_Pro_Crop.png" />
-            </div>
+                <div class="photo-media">
+                    <img src="./assets/images/Image_Pro_Crop.png" />
+                </div>
 
-            <div class="text-circle">
-                <h2>Antoine Samson - Développeur web junior -</h2>
+                <div class="text-circle">
+                    <h2>Antoine Samson - Développeur web junior -</h2>
+                </div>
+
             </div>
         </div>
 
-        <p class="description">
+        <p class="description" data-scrolly="fromBottom">
             J’ai de bonnes compétences en HTML/CSS et l’entraide est une valeur importante pour moi, ce qui fait que j’aime aider les gens à analyser leur
             projet, trouver le problème et le résoudre.
         </p>
 
         <div class="cards-infos">
-            <div class="card-info card-info-left">
+            <div class="card-info card-info-left" data-scrolly="fromRight">
                 <h2>Mes compétences</h2>
                 <div class="card-info-content">
                     <p class="left">Intégration web</p>
@@ -59,7 +62,7 @@
                 </div>
             </div>
 
-            <div class="card-info card-info-right">
+            <div class="card-info card-info-right" data-scrolly="fromLeft">
                 <h2>Logiciels et langages</h2>
                 <div class="card-info-content">
                     <p class="left">Visual Studio Code</p>
@@ -69,7 +72,7 @@
                 </div>
             </div>
 
-            <div class="card-info card-info-left">
+            <div class="card-info card-info-left" data-scrolly="fromRight">
                 <h2>Mes qualités</h2>
                 <div class="card-info-content">
                     <p class="left">Empathique</p>
@@ -79,7 +82,7 @@
                 </div>
             </div>
 
-            <div class="card-info card-info-right">
+            <div class="card-info card-info-right" data-scrolly="fromLeft">
                 <h2>Mes intérêts</h2>
                 <div class="card-info-content">
                     <p class="left">Les jeux-vidéo</p>
@@ -94,11 +97,11 @@
 
 <section class="contact" id="contact">
     <div class="wrapper">
-        <div class="contact-title">
+        <div class="contact-title" data-scrolly="fromBottom">
             <h2>Vous souhaitez me contacter?</h2>
             <h2>C'est par ici!</h2>
         </div>
-        <div class="infos-form">
+        <div class="infos-form" data-scrolly="fromLeft">
             <div class="infos">
                 <div class="contact-mail">
                     <h3>Adresse Courriel</h3>
@@ -130,7 +133,7 @@
             </div>
 
             <form action="" class="form" autocomplete="off" data-component="Form">
-                <div class="form__body">
+                <div class="form__body" data-scrolly="fromRight">
                     <fieldset class="grid">
                         <div class="input">
                             <label class="input__label" for="name">Votre nom*</label>
