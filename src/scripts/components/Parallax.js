@@ -7,19 +7,17 @@ export default class Parallax {
     }
   
     init() {
+        console.log("mon parallaxe est là")
+        document.addEventListener("mousemove", parallax);
+        function parallax(event) {
+          this.querySelectorAll(".parallax-wrap .parallax-element").forEach((shift) => {
 
-      var cursor = document.getElementById("cursor");
-      console.log("mon curseur est créé");
-      document.addEventListener('mousemove', 
-      function(e){
-
-
-      var x = e.clientX;
-      var y = e.clientY;
-      
-      cursor.style.left = x + "px";
-      cursor.style.top = y + "px";
-      });
+            const x = (window.innerWidth - event.pageX * 5) / 90;
+            const y = (window.innerHeight - event.pageY * 10) / 90;
+        
+            shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
+          });
+        }
 
     }
 

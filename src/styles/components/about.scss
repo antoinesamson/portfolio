@@ -77,7 +77,8 @@
 .cards-infos {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    padding: 55px 0;
+    padding: 55px 40px;
+    width: 100%;
 
     .card-info {
         margin-bottom: 100px;
