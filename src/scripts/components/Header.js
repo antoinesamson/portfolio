@@ -2,7 +2,7 @@ export default class Header {
   constructor(element) {
     this.element = element;
     this.options = {
-      treshold: 0.05,
+      treshold: 0.01,
     };
     this.scrollPosition = 0;
     this.lastScrollPosition = 0;

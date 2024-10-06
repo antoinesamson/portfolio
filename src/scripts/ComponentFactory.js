@@ -3,6 +3,7 @@ import Carousel from './components/Carousel';
 import Circle from './components/Circle';
 import Header from './components/Header';
 import Form from './components/Form';
+import Modal from './components/Modal';
 import Youtube from './components/Youtube';
 import Scrolly from './components/Scrolly';
 
@@ -15,6 +16,7 @@ export default class ComponentFactory {
       Circle,
       Form,
       Header,
+      Modal,
       Scrolly,
       Youtube,
     };

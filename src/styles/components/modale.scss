@@ -52,13 +52,38 @@
         
     }
 
-    .modale-window{
-        display: none;
-    }
+
+
 
     &:hover{
         .card-hover{
             opacity: 1;
+        }
+    }
+    
+}
+
+.modale-window{
+
+
+    overflow: hidden;
+    border-radius: 25px;
+    border: 5px solid var(--color-bg-primary);
+    cursor: pointer;
+    padding: 0;
+
+
+    .modale-media{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10%;
+        width: 100%;
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
     }
     
