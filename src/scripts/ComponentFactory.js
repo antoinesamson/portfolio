@@ -1,4 +1,5 @@
 import Accordion from './components/Accordion';
+import Background from './components/Background';
 import Carousel from './components/Carousel';
 import Circle from './components/Circle';
 import Cursor from './components/Cursor';
@@ -14,6 +15,7 @@ export default class ComponentFactory {
     this.element = element;
     this.componentList = {
       Accordion,
+      Background,
       Carousel,
       Circle,
       Cursor,

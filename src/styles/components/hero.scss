@@ -1,26 +1,18 @@
-
-
 .hero .wrapper {
     margin-top: 100px;
     padding: 100px;
     height: 800px;
-;
-
     h1 .left,
     h1 .right {
-        -webkit-text-stroke: 8px var(--color-primary);
-
         paint-order: stroke fill;
 
         -webkit-font-smoothing: antialiased;
         background: linear-gradient(
             var(--color-gradient1),
-            #770128,
             var(--color-gradient2)
         );
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
-        
     }
     h1 .left {
         text-align: left;
@@ -46,7 +38,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 
     .icon {
         height: 150px;

@@ -209,3 +209,9 @@ header {
         display: none;
     }
 }
+
+#hero,
+#about,
+#contact {
+    scroll-behavior: smooth !important;
+}
