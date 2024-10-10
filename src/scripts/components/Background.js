@@ -1,3 +1,5 @@
+//source : https://codepen.io/toshiya-marukubo/pen/NWxzOMz
+
 export default class Background {
   constructor(element) {
     this.element = element;
@@ -37,14 +39,14 @@ export default class Background {
         var Y = (canvas.height = window.innerHeight);
         var mouseX = null;
         var mouseY = null;
-        var dist = 90;
+        var dist = 70;
         var lessThan = Math.sqrt(dist * dist + dist * dist);
-        var mouseDist = 130;
+        var mouseDist = 110;
         var shapeNum;
         var shapes = [];
-        var ease = 0.3;
-        var friction = 0.9;
-        var lineWidth = 5;
+        var ease = 0.7;
+        var friction = 0.35;
+        var lineWidth = 2;
         X > Y ? (shapeNum = X / dist) : (shapeNum = Y / dist);
 
         if (X < 768) {
@@ -186,16 +188,16 @@ export default class Background {
           Y = canvas.height = window.innerHeight;
           shapes = [];
           if (X < 768) {
-            lineWidth = 2;
+            lineWidth = 1;
             dist = 40;
             lessThan = Math.sqrt(dist * dist + dist * dist);
             mouseDist = 50;
             X > Y ? (shapeNum = X / dist) : (shapeNum = Y / dist);
           } else {
-            lineWidth = 5;
-            dist = 80;
+            lineWidth = 2;
+            dist = 70;
             lessThan = Math.sqrt(dist * dist + dist * dist);
-            mouseDist = 150;
+            mouseDist = 110;
             X > Y ? (shapeNum = X / dist) : (shapeNum = Y / dist);
           }
           for (var i = 0; i < shapeNum + 1; i++) {
