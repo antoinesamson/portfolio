@@ -25,11 +25,34 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        
+        grid-template-columns: 1fr;
+        gap: 60px;
+        }
 }
 
 .form {
     width: 100%;
     z-index: 5;
+
+    
+}
+
+.form__body{
+
+    @media screen and (max-width: $breakpoint-sm) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+
+        fieldset.grid{
+            height: 100%;
+            width: 100%;
+        }
 }
 
 .infos {
@@ -50,6 +73,8 @@
     .button {
         color: var(--color-primary);
         width: 50%;
+
+        
     }
 
     .link-mail,
@@ -61,6 +86,20 @@
             border-color: var(--color-link);
         }
     }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        
+        text-align: center;
+        align-items: center;
+
+        .icons-sociaux{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        }
+
+        
 }
 
 .input {

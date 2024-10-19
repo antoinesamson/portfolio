@@ -3,7 +3,7 @@ export default class Scrolly {
     this.element = element;
 
     this.options = {
-      rootMargin: '-35% 0px',
+      rootMargin: '-25% 0px',
     };
 
     this.init();

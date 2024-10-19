@@ -14,4 +14,9 @@ footer .wrapper {
         align-items: center;
         gap: 30px;
     }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        
+        flex-direction: column;
+        }
 }

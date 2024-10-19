@@ -6,6 +6,19 @@ header {
     top: 0;
     z-index: 10;
     transition: all 0.3s ease-in-out;
+    .wrapper,
+    .menu
+    {
+        height: 100%;
+        width: 100%;
+    }
+
+    .menu{
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 }
 
 .nav-is-active .header,
@@ -34,29 +47,41 @@ header {
         }
 
         a {
-            font-size: 30px;
+            font-size: 25px;
             height: 48px;
         }
 
         .logo {
             position: absolute;
             top: 30px;
-            left: 90px;
+            left: 30px;
         }
 
         .toggle {
             position: absolute;
             top: 30px;
-            right: 90px;
+            right: 30px;
         }
     }
 }
+
 
 .header-is-hidden {
     header {
         transform: translateY(-100px);
     }
+
+    
+    
 }
+.nav-is-active.header-is-hidden{
+    @media screen and (max-width: $breakpoint-sm) {
+        header {
+            transform: translateY(0);
+        }
+        
+        }
+    }
 
 .menu {
     display: flex;

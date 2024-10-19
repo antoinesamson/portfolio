@@ -21,6 +21,21 @@
     h1 .right {
         text-align: right;
     }
+
+    @media screen and (max-width: $breakpoint-sm) {
+       padding: 50px 0;
+       height: 500px;
+
+       h1 .left,
+       h1 .right{
+        text-align: center;
+        width: 100%;
+       }
+
+       p{
+        padding: 0 50px;
+       }
+        }
 }
 
 .hero-grid {
@@ -32,6 +47,11 @@
     .button {
         margin: auto;
     }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        
+      grid-template-columns: 1fr;
+        }
 }
 
 .arrow {

@@ -51,7 +51,7 @@ export default class Background {
 
         if (X < 768) {
           lineWidth = 2;
-          dist = 30;
+          dist = 70;
           lessThan = Math.sqrt(dist * dist + dist * dist);
           mouseDist = 70;
           X > Y ? (shapeNum = X / dist) : (shapeNum = Y / dist);
@@ -189,7 +189,7 @@ export default class Background {
           shapes = [];
           if (X < 768) {
             lineWidth = 1;
-            dist = 40;
+            dist = 70;
             lessThan = Math.sqrt(dist * dist + dist * dist);
             mouseDist = 50;
             X > Y ? (shapeNum = X / dist) : (shapeNum = Y / dist);

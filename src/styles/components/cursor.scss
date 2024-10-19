@@ -9,4 +9,9 @@
     pointer-events: none;
     border-radius: 50%;
     z-index: 15;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        
+        display: none;
+        }
 }

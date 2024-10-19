@@ -7,12 +7,29 @@
 
 .about .wrapper .description {
     padding: 0 100px;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        
+        padding: 0 20px;
+        }
    
 }
 
 .photo{
     width: 600px;
     height: 600px;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        
+        height: 350px;
+        width: 350px;
+        }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        
+        height: 240px;
+        width: 240px;
+        }
 }
 
 .circle {
@@ -29,7 +46,24 @@
 
         margin: 0;
         text-align: left;
+
+        @media screen and (max-width: $breakpoint-xs) {
+        
+            font-size: 20px;
+            }
     }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        
+        height: 350px;
+        width: 350px;
+        }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        
+        height: 240px;
+        width: 240px;
+        }
 
 }
 
@@ -41,10 +75,23 @@
     position: absolute;
 
     img {
+        display: block;
         height: 100%;
         width: 100%;
         object-fit: cover;
     }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        
+        max-width: 290px;
+        max-height: 290px;
+        }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        
+        max-width: 190px;
+        max-height: 190px;
+        }
 }
 
 .text-circle{
@@ -76,6 +123,20 @@
 
     transform-origin: 0 300px;
 
+    @media screen and (max-width: $breakpoint-sm) {
+        
+        transform-origin: 0 175px;
+
+
+        }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        
+        transform-origin: 0 120px;
+
+
+        }
+
     
 }
 
@@ -94,6 +155,10 @@
             margin: 0;
             margin-bottom: 35px;
         }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            margin-bottom: 25px;
+        }
     }
 
     .card-info-content {
@@ -107,6 +172,19 @@
         .right {
             text-align: right;
         }
+
+        @media screen and (max-width: $breakpoint-sm) {
+        
+            grid-template-columns: 1fr;
+
+            .left{
+                text-align: center;
+            }
+            .right{
+                text-align: center;
+            }
+
+            }
     }
 
     .card-info-right {
@@ -120,6 +198,32 @@
         grid-column-end: 11;
         box-shadow: -38px -38px 0 var(--color-bg-secondary);
     }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        padding: 55px 10px;
+
+        h2{
+            margin-bottom: 30px;
+        }
+
+        p.left,
+        p.right{
+            margin-bottom: 20px;
+        }
+        
+
+        .card-info-right {
+            grid-column-start: 1;
+            grid-column-end: 13;
+            box-shadow: 0 0 0 var(--color-bg-secondary);
+        }
+    
+        .card-info-left {
+            grid-column-start: 1;
+            grid-column-end: 13;
+            box-shadow:  0 0 0 var(--color-bg-secondary);
+        }
+        }
 }
 
 .card-info {
