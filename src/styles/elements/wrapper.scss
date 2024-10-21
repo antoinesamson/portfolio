@@ -7,7 +7,7 @@
     width: calc(100% - var(--spacing-xl));
     margin: 0 auto;
 
-    @media screen and (max-width: $breakpoint-sm) {
+    @media screen and (max-width: $breakpoint-xs) {
         
         width: calc(100% - var(--spacing-sm));
         }

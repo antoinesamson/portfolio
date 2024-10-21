@@ -39,7 +39,7 @@ export default class Background {
         var Y = (canvas.height = window.innerHeight);
         var mouseX = null;
         var mouseY = null;
-        var dist = 70;
+        var dist = 100;
         var lessThan = Math.sqrt(dist * dist + dist * dist);
         var mouseDist = 110;
         var shapeNum;
@@ -195,7 +195,7 @@ export default class Background {
             X > Y ? (shapeNum = X / dist) : (shapeNum = Y / dist);
           } else {
             lineWidth = 2;
-            dist = 70;
+            dist = 100;
             lessThan = Math.sqrt(dist * dist + dist * dist);
             mouseDist = 110;
             X > Y ? (shapeNum = X / dist) : (shapeNum = Y / dist);
