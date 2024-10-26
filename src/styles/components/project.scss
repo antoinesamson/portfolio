@@ -98,8 +98,39 @@
 .main-category {
     background-color: var(--color-bg-primary);
     padding: 40px 80px;
-    margin-bottom: 50px;
+    margin-bottom: 200px;
     border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .button{
+        max-width: 85%;
+
+        @media screen and (max-width: $breakpoint-md){
+            max-width: 100%;
+        }
+
+        &:hover{
+            background-image: linear-gradient(
+                var(--color-gradient2),
+                var(--color-gradient2)
+            );
+        }
+
+    }
+
+    .link{
+        text-decoration: underline;
+        font-size: var(--font-size-content);
+    }
+
+    @media screen and (max-width: $breakpoint-md){
+        padding: 40px 20px;
+    }
+
+
 }
 
 .sub-category {
