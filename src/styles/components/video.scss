@@ -1,5 +1,9 @@
 .video-container{
     margin: 150px 0;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        margin: 50px 0;
+        }
 }
 
 .video {
@@ -11,6 +15,7 @@
     position: relative;
     cursor: pointer;
     border-radius: 25px;
+    overflow: hidden;
 
 
     img {
@@ -28,11 +33,13 @@
         top: 50%;
         left: 50%;
         text-shadow: 0 0 4px rgba(0, 0, 0, 1);
-        transition: all 0.3s ease-in-out;
+        transition: all 0.7s ease-in-out;
         transition-property: opacity, transform;
         transform-origin: 0 0;
-        transform:scale(1) translate(-50%, -50%);
+        transform:rotate(-360deg) translate(-50%, -50%);
         z-index: 2;
+
+
 
         .is-video-ready & {
             opacity: 1;
@@ -41,7 +48,7 @@
 
     &:hover .video__media {
         .icon {
-            transform:scale(0.7) translate(-50%, -50%);
+            transform:rotate(0) translate(-50%, -50%);
         }
 
         img{

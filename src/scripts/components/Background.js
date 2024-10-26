@@ -16,7 +16,7 @@ export default class Background {
     (function () {
       'use strict';
       window.addEventListener('load', function () {
-        var canvas = document.getElementById('canvas');
+        var canvas = document.getElementById('canvas');  //recherche la zone ou le fond sera intégré
 
         if (!canvas || !canvas.getContext) {
           return false;
@@ -35,21 +35,21 @@ export default class Background {
         ********************/
 
         var ctx = canvas.getContext('2d');
-        var X = (canvas.width = window.innerWidth);
-        var Y = (canvas.height = window.innerHeight);
-        var mouseX = null;
-        var mouseY = null;
-        var dist = 100;
+        var X = (canvas.width = window.innerWidth); //largeur de l'écran
+        var Y = (canvas.height = window.innerHeight); //hauteur de l'écran
+        var mouseX = null; //position horizontale de la souris
+        var mouseY = null; //position verticale de la souris
+        var dist = 100;  //distance entre les lignes du fond
         var lessThan = Math.sqrt(dist * dist + dist * dist);
-        var mouseDist = 110;
+        var mouseDist = 110;  //grosseur de la zone autour de la souris qui modifie le fond 
         var shapeNum;
-        var shapes = [];
-        var ease = 0.7;
-        var friction = 0.35;
-        var lineWidth = 2;
+        var shapes = []; //tableau vide qui accueillera les lignes présentes dans le canvas
+        var ease = 0.7;  // easing de l'animation des lignes au contact de la souris
+        var friction = 0.35;  //indique à quel point le mouvement des lignes doit rebondir au contact de la souris
+        var lineWidth = 2;  //largeur des lignes
         X > Y ? (shapeNum = X / dist) : (shapeNum = Y / dist);
 
-        if (X < 768) {
+        if (X < 768) { //breakpoint qui modifie les paramètres lorsque l'écran est en desosus de 768px
           lineWidth = 2;
           dist = 70;
           lessThan = Math.sqrt(dist * dist + dist * dist);
@@ -80,20 +80,20 @@ export default class Background {
         }
 
         Shape.prototype.init = function (x, y, i) {
-          this.x = x;
-          this.y = y;
+          this.x = x; //valeur de la longueur
+          this.y = y; //valeur de la hauteur
           this.xi = x;
           this.yi = y;
           this.i = i;
-          this.r = 1;
-          this.v = {
+          this.r = 1; //indique la grosseur des cercles ou les lignes se rencontrent
+          this.v = { //indique le nombre de lignes qui se surperposent sur les lignes horizontales et verticales
             x: 0,
             y: 0,
           };
-          this.c = rand(220, 220);
+          this.c = rand(220, 220); //appliquera au hazard une couleur entre ces deux chiffres, peut varier entre 0 et 360 et être modifié pour changer la palette
         };
 
-        Shape.prototype.draw = function () {
+        Shape.prototype.draw = function () { //fonction qui dessine les lignes une par une
           var ctx = this.ctx;
           ctx.save();
           ctx.fillStyle = 'hsl(' + this.c + ', ' + '80%, 60%)';
@@ -103,7 +103,7 @@ export default class Background {
           ctx.restore();
         };
 
-        Shape.prototype.mouseDist = function () {
+        Shape.prototype.mouseDist = function () {//fonction qui modifie la position des lignes
           var x = mouseX - this.x;
           var y = mouseY - this.y;
           var d = x * x + y * y;

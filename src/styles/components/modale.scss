@@ -3,11 +3,14 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     margin-bottom: 200px;
+    align-items: center;
+    justify-items: center;
 
     @media screen and (max-width: $breakpoint-sm) {
         
         display: flex;
         flex-direction: column;
+        gap: 80px;
 
         }
 }
@@ -15,8 +18,8 @@
 .card-modale{
     text-align: center;
     cursor: pointer;
-    max-height: 300px;
-    max-width: 300px;
+    height: 300px;
+    width: 300px;
     
     .card-media{
         position: relative;
@@ -60,6 +63,14 @@
         span.plus-vertical{
             transform: rotate(90deg);
             }
+
+            @media screen and (max-width: $breakpoint-xs) {
+                span{
+                   height: 75px;
+                width: 15px; 
+                }
+                
+                }
         
     }
 
@@ -72,25 +83,33 @@
         }
     }
 
+    @media screen and (max-width: $breakpoint-md) {
+        height: 250px;
+        width: 250px;
+        
+        }
+
     @media screen and (max-width: $breakpoint-sm) {
-        max-height: 700px;
-        max-width: 700px;
+        height: 300px;
+        width: 300px;
         .card-hover{
             opacity: 1;
         }
         
         }
+
+        
     
 }
 
 .modale-window{
-
 
     overflow: hidden;
     border-radius: 25px;
     border: 5px solid var(--color-bg-primary);
     cursor: pointer;
     padding: 0;
+    background-color: rgba($color: #000000, $alpha: 0.4);
 
 
     .modale-media{
@@ -105,6 +124,10 @@
             width: 100%;
             object-fit: cover;
         }
+    }
+
+    &::backdrop{
+        background-color: rgba($color: #000000, $alpha: 0.5);
     }
 
     @media screen and (max-width: $breakpoint-sm) {
