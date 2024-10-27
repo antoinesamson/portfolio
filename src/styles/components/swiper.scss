@@ -1,9 +1,10 @@
 .swiper{
     height: 450px;
+    padding: 0 0 50px 0;
 }
 
 .swiper-wrapper{
-    height: calc(100% - 100px);
+    height: calc(100% - 50px);
 }
 
 .swiper-slide{
@@ -34,4 +35,10 @@
 .swiper-pagination-bullet-active{
     background-color: var(--color-bg-secondary);
 }
+
+@media screen and (max-width: $breakpoint-sm) {
+    .swiper-wrapper{
+        height: calc(100% - 150px);
+    }
+    }
 

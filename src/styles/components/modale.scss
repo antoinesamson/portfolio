@@ -126,8 +126,12 @@
         }
     }
 
+    .modale-media-mobile{
+        display: none;
+    }
+
     .x{
-        padding-top: 10px;
+        padding-top: 6px;
         color: var(--color-black);
         position: absolute;
         top: 20px;
@@ -139,6 +143,7 @@
         font-size: 40px;
         background-color: var(--color-white);
         border-radius: 50%;
+        border: 5px solid var(--color-black);
 
     }
 
@@ -147,8 +152,12 @@
     }
 
     @media screen and (max-width: $breakpoint-sm) {
-        height: 80%;
-        width: 90%;
+        .modale-media{
+            display: none;
+        }
+        .modale-media-mobile{
+            display: block;
+        }
         }
     
 }
