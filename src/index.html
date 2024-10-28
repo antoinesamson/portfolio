@@ -50,7 +50,7 @@
 
             <div class="video" data-component="Youtube" data-video-id="JSphqB5VRwo"  data-scrolly="fromRight">
                 <div class="video__media js-video">
-                    <img class="js-poster" src="assets/images/projet1.png" alt="Vue d'une montagne sur coucher de soleil" />
+                    <img class="js-poster" src="assets/images/thumbnail.png" alt="Vue d'une montagne sur coucher de soleil" />
                     <svg class="icon icon--xl">
                         <use xlink:href="#icon-play"></use>
                     </svg>
@@ -139,9 +139,11 @@
                 <a class="button">Mon cv</a>
             </div>
 
-            <form action="" class="form" autocomplete="off" data-component="Form">
+            <form  action="https://api.web3forms.com/submit" method="POST" class="form" autocomplete="off" >
                 <div class="form__body" data-scrolly="fromRight">
+                    <input type="hidden" name="access_key" value="6b838308-20d0-4ad6-9232-aabb20e54b2e">
                     <fieldset class="grid">
+                        
                         <div class="input">
                             <label class="input__label" for="name">Votre nom*</label>
                             <input class="input__element" type="text" name="" id="name" placeholder="Jean-Eude" required />
@@ -167,7 +169,14 @@
                             <div class="error_info">Veuillez entrer votre message ici</div>
                         </div>
                     </fieldset>
-                    <a class="button">Envoyer</a>
+
+                    <footer class="form__footer"><button class="button">Envoyer</button></footer>
+                    
+                </div>
+
+                <div class="form__confirmation">
+                    <h2>Merci beaucoup</h2>
+                    <p>Votre message a bien été reçu. Je vous répondrai bientôt!</p>
                 </div>
             </form>
         </div>

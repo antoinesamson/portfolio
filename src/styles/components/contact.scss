@@ -27,32 +27,9 @@
     grid-template-columns: 1fr 1fr;
 
     @media screen and (max-width: $breakpoint-sm) {
-        
         grid-template-columns: 1fr;
         gap: 60px;
-        }
-}
-
-.form {
-    width: 100%;
-    z-index: 5;
-
-    
-}
-
-.form__body{
-
-    @media screen and (max-width: $breakpoint-sm) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        }
-
-        fieldset.grid{
-            height: 100%;
-            width: 100%;
-        }
+    }
 }
 
 .infos {
@@ -73,8 +50,6 @@
     .button {
         color: var(--color-primary);
         width: 50%;
-
-        
     }
 
     .link-mail,
@@ -88,46 +63,13 @@
     }
 
     @media screen and (max-width: $breakpoint-sm) {
-        
         text-align: center;
         align-items: center;
 
-        .icons-sociaux{
+        .icons-sociaux {
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        }
-
-        
-}
-
-.input {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 40px;
-}
-
-.input__element {
-    width: 100%;
-    padding: 15px;
-    border-radius: 15px;
-    border: none;
-    background-color: var(--color-primary);
-}
-
-.textarea .input__element {
-    height: 200px;
-}
-
-fieldset {
-    border: none;
-    padding: 0;
-}
-
-.error_info {
-    display: none;
-    color: var(--color-bg-secondary);
+    }
 }
