@@ -203,6 +203,32 @@
         border-radius: 25px 0 0 0 ;
     }
 
+    &.card-carousel-full-img{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+
+        .card-media{
+            border-radius: 25px 25px 0 0;
+        }
+
+        .card-media img{
+            object-fit: fill;
+        }
+
+
+        .card-content{
+            position: static;
+            width: calc(100% - 40px);
+            border-radius: 0 0 25px 25px;
+
+
+        }
+        
+    }
+    
+
     @media screen and (max-width: $breakpoint-sm) {
         flex-direction: column;
         justify-content: center;

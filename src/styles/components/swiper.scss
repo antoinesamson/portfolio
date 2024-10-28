@@ -36,6 +36,10 @@
     background-color: var(--color-bg-secondary);
 }
 
+.swiper-card-full-img .swiper-wrapper{
+    height: calc(100% - 150px);
+}
+
 @media screen and (max-width: $breakpoint-sm) {
     .swiper-wrapper{
         height: calc(100% - 150px);
