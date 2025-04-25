@@ -151,7 +151,7 @@ export default class Background {
           }
         };
 
-        Shape.prototype.render = function (i) {
+        Shape.prototype.render = function (i) { //fonction qui modifie la position des lignes.
           this.drawLine(i);
           if (mouseX !== null) this.mouseDist();
           this.draw();
@@ -183,7 +183,7 @@ export default class Background {
           Event
         ********************/
 
-        function onResize() {
+        function onResize() { //fonction qui ajuste les propriétés des lignes selon la taille de la fenêtre
           X = canvas.width = window.innerWidth;
           Y = canvas.height = window.innerHeight;
           shapes = [];
@@ -209,7 +209,7 @@ export default class Background {
           }
         }
 
-        window.addEventListener('resize', function () {
+        window.addEventListener('resize', function () { //fonction qui met à jour le resizing des lignes
           onResize();
         });
 
