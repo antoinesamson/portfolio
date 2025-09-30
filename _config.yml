@@ -2,7 +2,7 @@
 title: Portfolio | Antoine Samson
 description: Mon portfolio de développeur web
 baseurl: "/src" # The subpath of your site, e.g. /blog
-url: "https://github.com/antoinesamson/portfolio" # The base hostname & protocol for your site
+url: "https://github.com/antoinesamson" # The base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
